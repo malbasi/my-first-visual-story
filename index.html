@@ -21,5 +21,7 @@ By Matt Albasi
 {% endblock pubdate %}
 
 {% block content %}
-<p> hello world plus something else</p>
+{% for obj in harvard_park_homicides %}
+  {{ obj.first_name }} {{ obj.last_name }}<br>
+{% endfor %}
 {% endblock content %}
